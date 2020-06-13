@@ -1,10 +1,18 @@
-bus-send \
-> --session \
-> --print-reply \
-> --dest=es.aleksander.Alarm \
-> /es/aleksander/Alarm \
-> es.aleksander.Alarm.Configure \
-> uint32:20
+Send Message from command line :
+================================
 
+dbus-send \
+ --session \
+ --print-reply \
+ --dest=es.aleksander.Alarm \
+ /es/aleksander/Alarm \
+ es.aleksander.Alarm.Configure \
+ uint32:3
 
-dbus-feet
+ 
+dbus-send --session --print-reply --dest=es.aleksander.Alarm /es/aleksander/Alarm es.aleksander.Alarm.Configure uint32:2
+
+To view in GUI Tool
+====================
+d-feet
+
