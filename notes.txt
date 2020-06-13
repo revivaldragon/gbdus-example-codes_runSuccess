@@ -16,3 +16,6 @@ To view in GUI Tool
 ====================
 d-feet
 
+The dbus-monitor command is used to monitor messages going through a D-Bus message bus
+ dbus-monitor --session
+
